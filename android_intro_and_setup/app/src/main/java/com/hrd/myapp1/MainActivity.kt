@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         convertButton.setOnClickListener {
             val amount = amountInput.text.toString().toFloat()
             val valueInCedis = amount * 12.00
-            displayValue.text = valueInCedis.toString()
+            displayValue.text = "GHS" + valueInCedis.toString()
         }
     }
 }

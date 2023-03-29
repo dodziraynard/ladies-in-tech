@@ -7,6 +7,7 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+
     <!--  Title view  -->
     <TextView
         android:layout_width="match_parent"
@@ -19,6 +20,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Amount ($)" />
+
+    <Spinner
+        android:id="@+id/conversion_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
     <EditText
         android:id="@+id/amount_input"
@@ -42,7 +48,9 @@
         android:id="@+id/convert_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Convert" />
+        android:layout_gravity="center"
+        android:text="Convert"
+        android:textAllCaps="false" />
 
 
 </LinearLayout>
